@@ -11,6 +11,7 @@ background-color:rgba(105,104,103, 0.6);
 const Header =styled.h1`
 font-size:4rem;
 color:#F9B756;
+text-decoration:underline;
 `
 
 const UnorderedList =styled.ul`
