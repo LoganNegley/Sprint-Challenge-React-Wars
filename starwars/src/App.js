@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from "axios";
+import WarCard from "WarCard";
 
 
 
@@ -31,11 +32,7 @@ const App = () => {
       <h1 className="Header">React Wars</h1>
     </div>
     <div>
-      {
-        characterData.map(item,index) => {
-          return
-        }
-      }
+<WarCard/>
     </div>
     </>
   );
