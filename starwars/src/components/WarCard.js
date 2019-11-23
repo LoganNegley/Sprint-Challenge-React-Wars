@@ -1,7 +1,22 @@
 import React from "react";
-// import styled from "styled-components";
+import styled from "styled-components";
 
+const WarCardContainer = styled.div`
+width:25%;
+border:2px black solid;
+margin:2rem;
+`
+const Header =styled.h1`
+font-size:4rem;
+`
 
+const UnorderedList =styled.ul`
+list-style-type:none;
+`
+const ListItems =styled.li`
+font-size:3rem;
+
+`
 
 
 
@@ -10,18 +25,18 @@ import React from "react";
 
 const WarCard = props => {
   return (
-    <div className="war-card ">
-  <h1>{props.eachCharacter.name}</h1>
-<ul>
- <li>Gender: {props.eachCharacter.gender}</li>
-  <li>Year Born: {props.eachCharacter.birth_year}</li>
-  <li>Eye Color: {props.eachCharacter.eye_color}</li>
-   <li>Hair Color: {props.eachCharacter.hair_color}</li>
+    <WarCardContainer className="war-card ">
+  <Header>{props.eachCharacter.name}</Header>
+<UnorderedList>
+ <ListItems>Gender: {props.eachCharacter.gender}</ListItems>
+  <ListItems>Year Born: {props.eachCharacter.birth_year}</ListItems>
+  <ListItems>Eye Color: {props.eachCharacter.eye_color}</ListItems>
+   <ListItems>Hair Color: {props.eachCharacter.hair_color}</ListItems>
    
-</ul>
+</UnorderedList>
 
 
-    </div>
+    </WarCardContainer>
   );
 };
 export default WarCard;
