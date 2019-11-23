@@ -8,7 +8,7 @@ import WarCard from "./WarCard";
 
 const StarWarsCharacter = () => {
 
-const [characterData, setCharacterData] = useState({});
+const [characterData, setCharacterData] = useState([]);
 
   useEffect(() => {
     axios
@@ -20,15 +20,14 @@ const [characterData, setCharacterData] = useState({});
   }, []);
 
   return (
-
-    {characterData.map((item, index) => {
-          return <WarCard key={index} breed={breed} imgUrl={item} />;
-        })}
-
-    <div className = "characterContainer">
-      <WarCard/>
+    <div>
+      {characterData.map((eachCharacter, index) => (
+        <WarCard key= {index} eachCharacter = {eachCharacter} />
+      ))}
     </div>
+  
   );
-}
+};
+
 
 export default StarWarsCharacter;
