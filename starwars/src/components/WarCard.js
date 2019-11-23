@@ -5,9 +5,12 @@ const WarCardContainer = styled.div`
 width:25%;
 border:2px black solid;
 margin:2rem;
+background-color:rgba(105,104,103, 0.6);
+
 `
 const Header =styled.h1`
 font-size:4rem;
+color:#F9B756;
 `
 
 const UnorderedList =styled.ul`
