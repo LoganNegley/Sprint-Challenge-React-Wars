@@ -1,5 +1,4 @@
 import React from "react";
-import App from "../components/App";
 
 const WarCard = props => {
   return (
